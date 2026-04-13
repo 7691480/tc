@@ -1,0 +1,12 @@
+# ESP-IDF Partition Table
+# Name,        Type,    SubType,    Offset,        Size,         Flags
+nvs,                data,       nvs,       0x11000,         64K,
+phy_init,         data,       phy,       0x21000,         4K,
+model,           data,       spiffs,     0x22000,         960K,
+fctry,              data,       nvs,        0x112000,       24K,
+storage,         data,       spiffs,      0x118000,       1M,
+voice_data,     data,        fat,        0x218000,       3890K
+animation,     data,        spiffs,     0x5e5000,       304K,
+weather,       data,         spiffs,     0x631000,       1800K,
+webserver,    data,         spiffs,     0x7f3000,        700K,
+factory,         app,        factory,    0x8b0000,        4M,
